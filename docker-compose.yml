@@ -1,0 +1,8 @@
+services:
+  web:
+    image: traefik/whoami:latest
+    container_name: portainer-gitops-whoami
+    ports:
+      - "8090:80"
+    restart: unless-stopped
+    pull_policy: build
