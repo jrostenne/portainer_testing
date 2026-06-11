@@ -5,4 +5,3 @@ services:
     ports:
       - "8090:80"
     restart: unless-stopped
-    pull_policy: build
